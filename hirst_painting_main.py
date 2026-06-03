@@ -33,6 +33,8 @@ def random_color():
     return color
 tim.speed("fastest")
 tim.teleport(-275,-275)
+tim.penup()
+tim.hideturtle()
 
 def next_coloumn():
     y = tim.ycor()
@@ -42,9 +44,7 @@ def next_coloumn():
 for _ in range(10):   
     for i in range(10):
         tim.dot(20,random_color())
-        tim.penup()
         tim.forward(60)
-        tim.pendown
     next_coloumn()
 
 
